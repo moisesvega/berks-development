@@ -9,11 +9,11 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "berks-development-berkshelf"
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "Official Ubuntu 12.04"
+  config.vm.box = "Berkshelf-CentOS-6.3-x86_64-minimal"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  config.vm.box_url = "http://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-vagrant-i386-disk1.box"
+  config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
 
   # Assign this VM to a host-only network IP, allowing you to access it
   # via the IP. Host-only networks can talk to the host machine as well as
