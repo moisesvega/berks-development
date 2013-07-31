@@ -6,3 +6,13 @@
 # 
 # All rights reserved - Do Not Redistribute
 #
+
+group node[:development][:group]
+
+user node[:development][:user] do
+  group node[:development][:group]
+  system true
+  shell "/bin/bash"
+end
+
+include_recipe "apache2"
